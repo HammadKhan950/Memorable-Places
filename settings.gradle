@@ -1,0 +1,2 @@
+rootProject.name='Memorable Places(Udemy)'
+include ':app'
