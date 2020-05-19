@@ -29,13 +29,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("My Memorable Places");
         SharedPreferences sharedPreferences=this.getSharedPreferences("com.example.memorableplacesudemy",Context.MODE_PRIVATE);
         ArrayList<String> latitude=new ArrayList<>();
         ArrayList<String> longitude=new ArrayList<>();
         listView=(ListView)findViewById(R.id.listview);
-      listOfPlaces=new ArrayList<String>();
+        listOfPlaces=new ArrayList<String>();
         locations=new ArrayList<LatLng>();
-       listOfPlaces.clear();
+        listOfPlaces.clear();
         latitude.clear();
         longitude.clear();
         locations.clear();
